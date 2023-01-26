@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veteránautó bérlés</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="project">
+
+
+<!--fejlec-->
+
+
+    <header>
+        <div class="header">
+            <div class="logo">
+            <img src="logo.png" alt="logo">
+            </div>
+            <div class="header-right">
+                <a href="index.html">Kezdőlap</a>
+                <span onclick="openNav()">Kapcsolat</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="project-body">
+        <main class="project-content">
+
+            <h2>Rólunk</h2>
+
+            <div class="row">
+                <div class="col-12 col-md-3 p-2">
+                    <div class="p-3 bg-light h-100">
+                        <p>Cégünk 2007-ben jött létre azzal a céllal, hogy veterán autók bérlését elérhetővé tegye magánszemélyek és cégek részére. Indulásunk óta több ezer elégedett ügyfelünk volt, sokan közülük visszatérő ügyfelek lettek.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 p-2">
+                    <div class="p-3 bg-light h-100">
+                        <p>Ügyfeleink biztonsága mindig is kiemelt fontosságú volt, ezért járműveink rendszeresen karban vannak tartva a telephelyünkön található műhelyünkben és minden új bérlés előtt ellenőrzésen esnek át.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 p-2">
+                    <div class="p-3 bg-light h-100">
+                        <p>Baleset esetén a fizetendő önrész maximum 400.000 HUF. Amennyiben foglaláskor igénybe veszi az önrész biztosítást (4000 HUF/nap), önt nem terheli további költség a jármű állapotát illetően.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 p-2">
+                    <div class="p-3 bg-light h-100">
+                        <p>A bérlés ideje alatt felmerülő üzemanyag költség, parkolási díj, autópálya díj és esetleges bírságok a bérlőt terhelik.</p>
+                    </div>
+                </div>
+            </div>
+
+<!--kapcsolat benyilo ablak-->
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebutton" onclick="closeNav()">&times;</a>
+                <div class="contactpage">
+                    <form id="rental-message">
+                        <label for="name">Név</label>
+                        <input type="text" id="name" name="name" placeholder="Az ön neve...">
+                        <label for="email">E-mail cím</label>
+                        <input type="email" id="email" name="email" placeholder="Az ön e-mail címe...">
+                        <label for="phone">Telefonszám</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Az ön telefonszáma...">
+                        <label for="message">Üzenet</label>
+                        <textarea id="message" name="message" placeholder="Ide írja üzenetét..." style="height: 200px"></textarea>
+                        <input type="submit" value="Küldés" class="submitButton">
+                    </form>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+
+<!--lablec-->
+
+    <footer>
+        <p>Veteránautó bérlés</p>
+    </footer>
+
+            <script src="script.js"></script>
+            <script src="/postMessage.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

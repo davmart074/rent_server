@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veteránautó bérlés</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="project">
+
+
+<!--fejlec-->
+
+
+    <header>
+        <div class="header">
+            <div class="logo">
+            <img src="logo.png" alt="logo">
+            </div>
+            <div class="header-right">
+                <a href="about.html">Rólunk</a>
+                <span onclick="openNav()">Kapcsolat</span>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="project-body">
+        <main class="project-content">
+
+            <h1>Autóink</h1>
+
+
+<!--kapcsolat benyilo ablak-->
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebutton" onclick="closeNav()">&times;</a>
+        <div class="contactpage">
+            <form id="rental-message">
+                <label for="name">Név</label>
+                <input type="text" id="name" name="name" placeholder="Az ön neve...">
+                <label for="email">E-mail cím</label>
+                <input type="email" id="email" name="email" placeholder="Az ön e-mail címe...">
+                <label for="phone">Telefonszám</label>
+                <input type="tel" id="phone" name="phone" placeholder="Az ön telefonszáma...">
+                <label for="message">Üzenet</label>
+                <textarea id="message" name="message" placeholder="Ide írja üzenetét..." style="height: 200px"></textarea>
+                <input type="submit" value="Küldés" class="submitButton">
+            </form>
+        </div>
+    </div>
+
+
+
+<!--galeria-->
+
+
+            <div class="container">
+                <div class="mySlides">
+                    <img src="ford-mustang-fastback-68.jpg" style="width: 100%">
+                </div>
+                <div class="mySlides">
+                    <img src="dodge-charger-69.jpg" style="width: 100%">
+                </div>
+                <div class="mySlides">
+                    <img src="lincoln-mark-iii-70.jpg" style="width: 100%">
+                </div>
+                <div class="mySlides">
+                    <img src="chevrolet-impala-67.jpg" style="width: 100%">
+                </div>
+                <div class="mySlides">
+                    <img src="delorean-dmc-82.jpg" style="width: 100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="ford-mustang-fastback-68.jpg" style="width: 100%" onclick="currentSlide(1)" alt="Ford Mustang 1968">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="dodge-charger-69.jpg" style="width: 100%" onclick="currentSlide(2)" alt="Dodge Charger 1969">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="lincoln-mark-iii-70.jpg" style="width: 100%" onclick="currentSlide(3)" alt="Lincoln Continental 1970">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="chevrolet-impala-67.jpg" style="width: 100%" onclick="currentSlide(4)" alt="Chevrolet Impala 1967">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="delorean-dmc-82.JPG" style="width: 100%" onclick="currentSlide(5)" alt="DeLorean DMC 1982">
+                    </div>
+                </div>
+            </div>
+            <script src="script.js"></script>
+
+
+            <h1>Foglalás</h1>
+
+            
+<!--berles-->
+
+
+            <div class="renting">
+                <div class="fullColumn">
+                    <div class="cont">
+                        <form id="megrendelo-form">
+
+
+                            <div class="renting">
+                                <div class="halfColumn">
+                                    <label for="name">Név</label>
+                                    <input type="text" id="name" name="name" placeholder="Az ön neve...">
+                                    <label for="email">E-mail cím</label>
+                                    <input type="email" id="email" name="email" placeholder="Az ön e-mail címe...">
+                                    <label for="phone">Telefonszám</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="Az ön telefonszáma...">
+                                    <label for="license">Jogosítvány száma</label>
+                                    <input type="text" id="license" name="licenseNumber" placeholder="Jogosítvány száma...">
+                                </div>
+                    
+                                <div class="halfColumn">
+                                    <label for="car">Választott autó</label>
+                                    <select id="car" name="carid">
+                                        <option value=""></option>
+                                        <option value="1">Ford Mustang 1968</option>
+                                        <option value="2">Dodge Charger 1969</option>
+                                        <option value="4">Lincoln Continental 1970</option>
+                                        <option value="5">Chevrolet Impala 1967</option>
+                                        <option value="3">DeLorean DMC 1982</option>
+                                    </select>
+
+                                    <label for="cardNumber">Hitelkártyaszám a foglalás biztosításához</label>
+                                    <input type="text" id="cardNumber" name="creditCard" placeholder="1111-2222-3333-4444">
+
+                                    <div class="renting">
+                                        <div class="halfColumn">
+                                            <label for="cardExp">Hitelkártya lejárati dátuma</label>
+                                            <input type="text" id="cardExp" name="creditCardExp" placeholder="hh/éé">
+                                        </div>
+                                        <div class="halfColumn">
+                                            <label for="cvv">CVV/CVC</label>
+                                            <input type="text" id="cvv" name="cvv" placeholder="111">
+                                        </div>
+                                    </div>   
+
+                                    <div class="renting">
+                                        <div class="halfColumn">
+                                            <label for="rentingStart">Foglalás kezdete</label>
+                                            <input type="datetime-local" id="rentingStart" name="startDate">
+                                        </div>
+                                        <div class="halfColumn">
+                                            <label for="rentingEnd">Foglalás vége</label>
+                                            <input type="datetime-local" id="rentingEnd" name="endDate">
+                                        </div>
+                                    </div>
+                                </div>
+                            <label>
+                                <input type="checkbox" id="licTime" name="licenseTime">Több mint 2 éve rendelkezik jogosítvánnyal
+                            </label>
+                            <label>
+                                <input type="checkbox" id="insurance" name="insure">Önrész biztosítás
+                            </label>
+                                <input type="submit" value="Foglalás" class="orderButton">
+                                <p>A bérlés ára 20.000 HUF/nap. Amennyiben kíván kötni önrész biztosítást baleset esetére, kérjük jelölje be a foglalás befejezése előtt. A biztosítás ára 4000 HUF/nap.</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+
+        
+        </main>
+        <nav class="project-nav"></nav>
+        <aside class="project-aside"></aside>
+    </div>
+
+<!--lablec-->
+
+    <footer>
+        <p>Veteránautó bérlés</p>
+    </footer>
+    
+    <script src="/postMessage.js"></script>
+    <script src="/postRental.js"></script>
+
+</body>
+</html>
