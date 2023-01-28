@@ -27,6 +27,27 @@ SET time_zone = "+00:00";
 -- Table structure for table `auto`
 --
 
+
+DROP TABLE IF EXISTS `megrendelo`;
+CREATE TABLE IF NOT EXISTS `megrendelo` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `phone` varchar(255) DEFAULT NULL,
+  `licenseNumber` varchar(255) DEFAULT NULL,
+  `creditCard` varchar(255) DEFAULT NULL,
+  `creditCardExp` varchar(255) DEFAULT NULL,
+  `cvv` int DEFAULT NULL,
+  `startDate` datetime DEFAULT NULL,
+  `endDate` datetime DEFAULT NULL,
+  `licenseTime` tinyint DEFAULT NULL,
+  `insure` tinyint DEFAULT NULL,
+  `carid` int DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `carid` (`carid`)
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf16;
+
+
 DROP TABLE IF EXISTS `auto`;
 CREATE TABLE IF NOT EXISTS `auto` (
   `id` int NOT NULL AUTO_INCREMENT,
@@ -37,6 +58,9 @@ CREATE TABLE IF NOT EXISTS `auto` (
 --
 -- Dumping data for table `auto`
 --
+
+
+
 
 INSERT INTO `auto` (`id`, `name`) VALUES
 (1, 'ford'),
@@ -67,24 +91,7 @@ CREATE TABLE IF NOT EXISTS `kapcsolat` (
 -- Table structure for table `megrendelo`
 --
 
-DROP TABLE IF EXISTS `megrendelo`;
-CREATE TABLE IF NOT EXISTS `megrendelo` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `name` varchar(255) DEFAULT NULL,
-  `email` varchar(255) DEFAULT NULL,
-  `phone` varchar(255) DEFAULT NULL,
-  `licenseNumber` varchar(255) DEFAULT NULL,
-  `creditCard` varchar(255) DEFAULT NULL,
-  `creditCardExp` varchar(255) DEFAULT NULL,
-  `cvv` int DEFAULT NULL,
-  `startDate` datetime DEFAULT NULL,
-  `endDate` datetime DEFAULT NULL,
-  `licenseTime` tinyint DEFAULT NULL,
-  `insure` tinyint DEFAULT NULL,
-  `carid` int DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  KEY `carid` (`carid`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf16;
+
 
 --
 -- Constraints for dumped tables
